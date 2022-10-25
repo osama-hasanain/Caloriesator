@@ -40,9 +40,9 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           scaffoldBackgroundColor: ColorManager.background,
           appBarTheme: AppBarTheme(
-            backgroundColor: ColorManager.primaryDark,
+            backgroundColor: Color(0xFFE8ADAA),
             iconTheme: IconThemeData(
-              color: Color(0xFFC7A317)
+              color: Color(0xFFB38481)
             )
           ),
           radioTheme: RadioThemeData(

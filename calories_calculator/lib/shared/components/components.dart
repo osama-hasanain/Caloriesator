@@ -33,7 +33,7 @@ Widget defaultTextFormField({
   return Container(
     //height: 50,
     decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 240, 240, 240) ,
+        color: Color(0xFFEBDDE2) ,
         borderRadius: BorderRadius.all(Radius.circular(8))
     ),
     child: TextFormField(
@@ -80,11 +80,12 @@ Widget defualtButton({
       Padding(
         padding: const  EdgeInsets.all(15.0),
         child: MaterialButton(
-          color: Color(0xFFC7A317),
+          color: Color(0xFFB38481),
           child:  Text(
             title,
             style: TextStyle(
-              color: Colors.white
+              color: Colors.white,
+              fontWeight: FontWeight.bold
             ),
           ),
           onPressed: onPressed
@@ -103,8 +104,8 @@ Widget defualtButton({
       onTap:onTap,
       child: CircleAvatar(
         backgroundColor: backgroundColor,
-        radius: 50,
-        child: Text(title,style: TextStyle(color: Colors.brown)),
+        radius: 40,
+        child: Text(title,style: TextStyle(color: Colors.brown,fontSize: 14.0,fontWeight: FontWeight.bold)),
       ),
     );
   }

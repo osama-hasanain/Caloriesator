@@ -40,7 +40,7 @@ class _MetricsChoicesScreenState extends State<MetricsChoicesScreen> {
                     const Text(
                       'What metrices do you use ?',
                       style: TextStyle(
-                        fontSize: 18.0,
+                        fontSize: 20.0,
                         fontWeight: FontWeight.bold
                       ),
                       ),
@@ -53,8 +53,8 @@ class _MetricsChoicesScreenState extends State<MetricsChoicesScreen> {
                         choiceItem(
                           title : 'KG/CM',
                           backgroundColor: cubit.isKGSelected?
-                          ColorManager.primary:
-                          Colors.grey[400],
+                          Color(0xFFE8ADAA):
+                          Color(0xFFEBDDE2),
                           onTap: changeMetriceSelect
                         ),
                         const SizedBox(
@@ -63,7 +63,7 @@ class _MetricsChoicesScreenState extends State<MetricsChoicesScreen> {
                         choiceItem(
                           title : 'LBS/FT',
                           backgroundColor: !cubit.isKGSelected?
-                          ColorManager.primary:Colors.grey[400],
+                          Color(0xFFE8ADAA):Color(0xFFEBDDE2),
                           onTap: changeMetriceSelect
                         ),
                       ],

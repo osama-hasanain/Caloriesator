@@ -68,26 +68,27 @@ class CaloriesatorLayoutCubit extends Cubit<CaloriesatorLayoutState> {
 
   double? proteinNeed;
   calculateproteinNeed(){
-    proteinNeed = allowedCalories! * 0.2;
+    proteinNeed = (allowedCalories! * 0.15)/4;
   }
 
   double? crabsNeed;
   calculateCrabsNeed(){
-    crabsNeed = (allowedCalories!/2)/4;
+    crabsNeed = (allowedCalories!*0.55)/4;
   }
   
   double? fatNeed;
   calculateFat(){
-    fatNeed = allowedCalories! * 0.30;
-    if(levelActivityKey! < 1){
-     fatNeed = fatNeed!/2;
-    }else if(levelActivityKey! < 2){
-     fatNeed = fatNeed!/4;
-    }else if(levelActivityKey! < 3){
-     fatNeed = fatNeed!/6;
-    }else{
-      fatNeed = fatNeed!/8;
-    }
+    // fatNeed = allowedCalories! * 0.30;
+    // if(levelActivityKey! < 1){
+    //  fatNeed = fatNeed!/2;
+    // }else if(levelActivityKey! < 2){
+    //  fatNeed = fatNeed!/4;
+    // }else if(levelActivityKey! < 3){
+    //  fatNeed = fatNeed!/6;
+    // }else{
+    //   fatNeed = fatNeed!/8;
+    // }
+    fatNeed = (allowedCalories! * 0.30)/9;
   }
 
   int? waterNeed;

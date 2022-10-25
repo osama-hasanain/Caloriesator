@@ -48,7 +48,13 @@ class _GoalsScreenState extends State<GoalsScreen> {
                   _levelActivityDropDown(),
                   const SizedBox(height: 20.0,),
                   _weekActivityDropDown(),
-                  const SizedBox(height: 30.0,),
+                  const SizedBox(height: 10.0,),
+                  Image.asset(
+                      'assets/effort.png',
+                    height: 200.0,
+                    width: 200.0,
+                     ),
+                    SizedBox(height: 30.0,),
                   defualtButton(
                     title: 'Next',
                      onPressed: () {

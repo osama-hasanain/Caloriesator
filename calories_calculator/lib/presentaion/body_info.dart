@@ -53,6 +53,12 @@ class _BodyInformationScreenState extends State<BodyInformationScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
                 child: Column(
                   children: [
+                    Image.asset(
+                      'assets/calculater.png',
+                    height: 150.0,
+                    width: 150.0,
+                     ),
+                    SizedBox(height: 10.0,),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                         vertical: 10.0,
@@ -113,11 +119,11 @@ class _BodyInformationScreenState extends State<BodyInformationScreen> {
                     Row(
                       children: [
                         SizedBox(
-                          height: 60.0,
-                          width: 60.0,
+                          height: 50.0,
+                          width: 50.0,
                           child: choiceItem(
                             title : 'Male',
-                            backgroundColor: cubit.userGender==male?Color(0xFF736AFF):Colors.grey,
+                            backgroundColor: cubit.userGender==male?Color(0xFFB4CFEC):Color(0xFFEBDDE2),
                             onTap: (){
                               setState(() {
                                 cubit.userGender = male;
@@ -127,11 +133,11 @@ class _BodyInformationScreenState extends State<BodyInformationScreen> {
                         ),
                         SizedBox(width: 10.0,),
                         SizedBox(
-                          height: 60.0,
-                          width: 60.0,
+                          height: 50.0,
+                          width: 50.0,
                           child: choiceItem(
                             title : 'Female',
-                            backgroundColor: cubit.userGender==female?Color(0xFFF52887):Colors.grey,
+                            backgroundColor: cubit.userGender==female?Color(0xFFE8ADAA):Color(0xFFEBDDE2),
                             onTap: (){
                               setState(() {
                                 cubit.userGender = female;
